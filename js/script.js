@@ -4,6 +4,7 @@ var display = document.querySelector(".code");
 var protect = document.querySelector(".protect");
 var pulse, colorArray, random, color, start, comparator;
 
+// choose the difficult
 for(var i=1; i<lis.length; i++){
     lis[i].addEventListener("click", function(){
         display.innerHTML = "Choosing the difficult...";
@@ -45,6 +46,7 @@ for(var i=1; i<lis.length; i++){
     });
 }
 
+// start a new game
 lis[0].addEventListener("click", function(){
     protect.style.display = "none";
     colorArray = [];
@@ -97,6 +99,7 @@ lis[0].addEventListener("click", function(){
     }
 });
 
+// picking the right color
 for(var i=0; i<items.length; i++){
     items[i].addEventListener("click", function(){
         for(var i=0; i<items.length; i++){
@@ -112,6 +115,7 @@ for(var i=0; i<items.length; i++){
     });
 }
 
+// random color generator
 function colorChange(){
     var r, g, b;
     r = Math.floor(Math.random() * 256);
