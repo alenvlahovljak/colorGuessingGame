@@ -2,12 +2,7 @@ var lis = document.querySelectorAll("li");
 var items = document.querySelectorAll(".item");
 var display = document.querySelector(".code");
 var protect = document.querySelector(".protect");
-var pulse;
-var colorArray;
-var random;
-var color;
-var start;
-var comparator;
+var pulse, colorArray, random, color, start, comparator;
 
 for(var i=1; i<lis.length; i++){
     lis[i].addEventListener("click", function(){
